@@ -9,40 +9,54 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     </head>
     <body id="portfoliPage">
+ 
+            <!-- Header with images and text, a dropdown menu and an overlay text. -->
+
         <header>
-            <div class="image-container">
-                <img src="photos/linesLeft.png" alt="lines"style="width:400px;height:100px;">
+            <div class="image-container-header">
+                <img src="photos/linesLeft.png" alt="lines" style="width:350px;height:100px;">
                 <a href="index.html"><div class="overlay-text">Theres Sundberg Selin</div></a>
             </div>
             <div class="dropdown">
-                <img src="photos/menulines.png" alt="3 lines" style="width: 40px; height: 40px;";>
+                <img src="photos/menulines.png" alt="3 lines" style="width: 40px; height: 40px;" ;>
                 <div class="dropdown-content">
     
             <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap" rel="stylesheet">
-            <nav>
+
+                    <!-- The dropdown menu, that will show and redirect you to the other pages of the website.
+        It has a tag on the current page showing the user what page they are on right now. -->
+
+            <nav class="menuhover">
                 <ul>
-                    <li></li><a href="about.html" >About me</a>
+                    <li><a href="index.html" >Home</a></li>
+                    <li><a href="about.html" >About me</a></li>
                     <li><a href="resume.html" >Resume</a></li>
-                    <li><a href="portfolio.html"class="active" >Portfolio</a></li>
+                    <li><a href="portfolio.html" class="active" >Portfolio</a></li>
                     <li><a href="contact.html"  >Contact me</a></li>
+                    <li><a href="WCAG.html" >WCAG Guidelines</a></li>
     
     
                 </ul>    
                 
-            </div>
+            </nav>
         </div>
 
-        </header>     
+        </header>   
+        
+            <!-- Manin class, where the actual body is -->
+
         <main>       
             <h1>Portfolio</h1>
 
-            <h5>Welcome to my work, look around and see if you find anything that 
-                you like! You can find a small description of the work next the pictures, 
+            <h5 class="portfolio-intro">Welcome to my work, look around and see if you find anything that 
+                you like! 
+                <!-- You can find a small description of the work next the pictures, 
                 and clicking the pictures will either give you a gallery of more pictures,
-                or send you to a repository on github. 
+                or send you to a repository on github.  -->
                 
             </h5>
 
+            <!-- This is where the links and short text about the projects are.  -->
 <div class="columns">
 
     <div class="pair">
@@ -62,7 +76,7 @@
         </p> 
     <div class="thumbnail" onclick="togglePopup('popup1')">
         <a href="https://github.com/roxzlir/ThePenguinBank">
-            <img src="photos/Hackerpenguin.png" alt="Drawing of girl with laptop"></a>    
+            <img src="photos/penguin.png" alt="A drawing of a penguin"></a>    
         </div>
 
 </div>
@@ -74,7 +88,7 @@
     </p> 
 <div class="thumbnail" onclick="togglePopup('popup1')">
     <a href="https://github.com/tussakin/IndividuelltDatabasProjektTess">
-        <img src="photos/databs.png" alt="Drawing of girl with laptop"></a>    
+        <img src="photos/databas.png" alt="A drawing of a database icon"></a>    
     </div>
 
 </div>
@@ -86,7 +100,7 @@
     </p> 
 <div class="thumbnail" onclick="togglePopup('popup1')">
     <a href="https://github.com/tussakin/OOP-Arv">
-        <img src="photos/hackergiraffe.png" alt="Drawing of girl with laptop"></a>    
+        <img src="photos/giraffeHead.png" alt="A drawing of a giraffe"></a>    
     </div>
 
 </div>
@@ -99,7 +113,7 @@
     </p> 
 <div class="thumbnail" onclick="togglePopup('popup1')">
     <a href="https://github.com/tussakin/chessBoard">
-        <img src="photos/chess.png" alt="Drawing of girl with laptop"></a>    
+        <img src="photos/chess1.png" alt="A drawing of a chess piece"></a>    
     </div>
 
 </div>
@@ -207,12 +221,12 @@
             on a steel-wire rack that was hand crafted after the curves of the bean.  
         </p>
         <img src="photos/beanscketch.jpg" alt="A sketch of the gypsum model in different angles">
-        <img src="photos/bönabaksidadetalj.jpg" alt="A picture of the whole gypsum model from the back">
-        <img src="photos/bönadetaljbotten.jpg" alt="A close up of the back of the gypsum model">
-        <img src="photos/bönasidadetalj.jpg" alt="A picture of the gysum model from the side">
-        <img src="photos/bönahelhetframsida.jpeg" alt="A photo of the gypsum model from the front">
-        <img src="photos/bönabaksidamedfot.jpeg" alt="A picture of the whole gypsum model with the wired rack and it's base">
-        <img src="photos/bönacollection.jpeg" alt="A collage of the gypsum model in different angles">
+        <img src="photos/beanbaksidadetalj.jpg" alt="A picture of the whole gypsum model from the back">
+        <img src="photos/beandetaljbotten.jpg" alt="A close up of the back of the gypsum model">
+        <img src="photos/beansidadetalj.jpg" alt="A picture of the gysum model from the side">
+        <img src="photos/beanhelhetframsida.jpeg" alt="A photo of the gypsum model from the front">
+        <img src="photos/beanbaksidamedfot.jpeg" alt="A picture of the whole gypsum model with the wired rack and it's base">
+        <img src="photos/beancollection.jpeg" alt="A collage of the gypsum model in different angles">
 
         <span class="close-button" onclick="closeGallery()">X</span>
 
@@ -245,9 +259,6 @@
         <span class="close-button" onclick="closeGallery()">X</span>
     </div>
     </div>
-
-
-
 
     <div class="popup" id="popup4">
         <div class="popup-content">
@@ -294,7 +305,7 @@
         <p class="popup-text">A collection of more or less abstract digital
             paintings, ranging from colourful and lively and more bleak and 
             subtle. Evry single one is made with an apple pencil on an ipad
-            pro 2020, in procreate.  
+            pro 2020, in procreate with an apple pencil.  
         </p>
         <img src="photos/sunsetworld.PNG" alt="A digital abstract painting with a white boarder, 
             it resembles a mountain with a sun setting behind it">
@@ -327,7 +338,7 @@
             rectangle, with a lineart bukette of leafs on strings, tied together with a string.">
         <img src="photos/twistedReality.PNG" alt="A digital drawing with a white background and a beige 
             rectange, a red and black swirl and a black line across the painting.">
-        <img src="photos/thepast.PNG" alt="A digital drawing with a white boarder and a beige background, 
+        <img src="photos/friendsInADifferentLife.PNG" alt="A digital drawing with a white boarder and a beige background, 
             with black, thick, smeared lines resembling abstract people.">
         <img src="photos/space.PNG" alt="A digital drawing with a white boarder, a dark background with 
             red and orange hues, with white lines running across the painting">
@@ -407,7 +418,7 @@
             <p class="popup-text">A steel wire abstract model with a wooden black base. The wires are soldered together and then
                 sanded.
             </p>
-        <img src="photos/trådfiskmedfot.jpeg" alt="A steel wired abstract sculpture standing on a black base.">
+        <img src="photos/steelwire.jpeg" alt="A steel wired abstract sculpture standing on a black base.">
         <p class="popup-text">A sketch of an ergonomic vacuumcleaner with several handles for multiple grips. One of the handles
             can be extended for the opportunity to vacuum under for example furniture such as beds, without having to bend your back 
             or get down on your knees. 
@@ -418,25 +429,34 @@
         
         <span class="close-button" onclick="closeGallery()">X</span>
     </div>
+  
 
 </div>
      </main>
-    <footer>
+
+     <!-- The footer, contains image, text and logos that lead to my profiles -->
+
+     <footer>
         <div class="image-container-footer">
-            <img src="photos/linesLeft.png" alt="lines"style="width:400px;height:100px;">        </div>
+            <img src="photos/linesLeft.png" alt="lines" style="width:350px;height:100px;">        </div>
         <div class="h4footer">
             <h4>Find me online!</h4>
         </div>
     
         <div class="linksfooter">
+            <a href="mailto:theres.selin@gmail.com">
+                <img src="photos/emaillogo.png" alt="Email Icon" style="width: 50px; height: 50px;" ></a>              
             <a href="https://www.instagram.com/kaotiskkreativitet?igsh=cDZqMWQzOW1waWY1&utm_source=qr">
-                <img src="photos/instalogo.png" alt="instagram logo" style="width:50px; height:50px;">
+                <img src="photos/instagramlogo.png" alt="instagram logo" style="width:50px; height:50px;">
             </a>
             <a href="https://linkedin.com/theressundbergselin">
                 <img src="photos/linkedinlogo.png" alt="linkedin logo" style="width:50px; height:50px;">
             </a>
             <a href="https://www.behance.net/theressundberg/">
                 <img src="photos/behancelogo.png" alt="behance logo" style="width:50px; height:50px;">
+            </a>
+            <a href="https://github.com/tussakin">
+                <img src="photos/githubLogo.png" alt="Github logo" style="width:45px; height:45px;">
             </a>
         </div>
     </footer>
